@@ -42,9 +42,9 @@ build_packages() {
     fi
 
     # One package for every suite: upstream ships one binary per architecture,
-    # so only the old ~<suite> version suffix ever differed. The fixed ~griffo
+    # so only the old ~<suite> version suffix ever differed. The fixed ~gaofn
     # keeps it below the distro's own build of the same version.
-    FULL_VERSION="$YT_DLP_VERSION-${BUILD_VERSION}~griffo_${ARCH}"
+    FULL_VERSION="$YT_DLP_VERSION-${BUILD_VERSION}~gaofn_${ARCH}"
     echo "  Building $FULL_VERSION"
 
     if ! docker build . -t "yt-dlp-$ARCH" \
